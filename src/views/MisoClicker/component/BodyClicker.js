@@ -6,11 +6,7 @@ import chingada from '../../../Sound/a_la_chingada_dice_la_suegra.mp3'
 import baka from '../../../Sound/baka.mp3'
 import calzon from '../../../Sound/calzon_negro.mp3'
 import {Howl,Howler} from 'howler'
-const audioclips=[
-    {sounds:chingada,label:"chingada"},
-    {sounds:baka,label:"baka"},
-    {sounds:calzon,label:"calzon"},
-]
+const audioclips=[chingada,baka,calzon]
 export default function BodyClicker(){
     const{localclick,click,clicks,setGlobalClick} = MisoClick(({localclick,click,clicks,setGlobalClick}) =>({localclick,click,clicks,setGlobalClick}),shallow);
     useEffect(() => {
@@ -20,14 +16,9 @@ export default function BodyClicker(){
         const sound = new Howl({src})
         sound.play()
     }
-    const getRandom=()=>{
-        let rand = Math.random() * audioclips.length;
-        rand = Math.floor(rand)
-        return rand;
-    }
     const play = ()=>{
         click();
-        soundPlay(audioclips[getRandom()].sounds)
+        soundPlay(audioclips[Math.floor(Math.random()*audioclips.length)])
     }
     Howler.volume(1.0)
     return(
