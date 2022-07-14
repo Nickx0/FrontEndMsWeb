@@ -1,0 +1,118 @@
+body{
+    --first-color:#2E2053;
+    --second-color:#272265;
+    --third-color:#AD7A8E;
+    --fourth-color:#D9C7DB;
+    --fifth-color:#EECFCC;
+    overflow-x: hidden;
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: rgb(2,0,36);
+    background: linear-gradient(var(--fourth-color) 0%, var(--third-color) 100%);
+    height: 100vh;
+    background-size: cover;
+}
+header{
+    width: 100%;
+    background-image: linear-gradient( var(--first-color),rgba(255,0,0,0));
+    height: 50px;
+}
+.navbar{
+    width: 80%;
+    margin: 0 auto;
+    float: center;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    animation: navbar-load 300ms;
+}
+.navbar-name{
+    display: inline;
+}
+.navbar-name h2 a,.navbar-name h2 a:hover,.navbar-name h2 a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+.navbar-links ul {
+    display: flex;
+    list-style-type: none;
+}
+.navbar-links ul li{
+    display:inline-block;
+    text-align: center;
+    list-style: none;
+    height: 50px;
+    margin-left: 5px;
+}
+.navbar-links ul li:hover{
+    background-image: linear-gradient(var(--first-color),rgba(255,0,0,0));
+    background-position: 100% 0;
+    moz-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.navbar-links ul li a{
+    padding:16px 20px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+}
+.landing-background{
+    background: linear-gradient(
+    to bottom,
+    rgba(0,0,0, 0.5),
+    rgba(0,0,0, 0)
+  ),url('./img/misolanding.webp');
+    
+    background-repeat: none;
+    background-size: cover;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    z-index: -1;
+}
+.galery{
+    display: flex;
+    margin-top:15px;
+}
+.galery-card {
+    background-color:#362e9c ;
+    max-height: 40vh;
+    min-height: 20vh;
+    width: 20%;
+    margin: 15px;
+    object-fit: cover;
+    overflow:hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.galery-card img{
+    max-width: 90%;
+    max-height: 90%;
+}
+.background{
+    background-repeat: none;
+    background-size: cover;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    z-index: -1;
+}
+
+@keyframes navbar-load {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
