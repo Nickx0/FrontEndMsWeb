@@ -1,20 +1,27 @@
-body{
+/* Variables */
+:root{
     --first-color:#2E2053;
     --second-color:#272265;
     --third-color:#AD7A8E;
     --fourth-color:#D9C7DB;
     --fifth-color:#EECFCC;
-    overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: rgb(2,0,36);
-    background: linear-gradient(var(--fourth-color) 0%, var(--third-color) 100%);
-    height: 100vh;
-    background-size: cover;
+    
 }
+html{
+    background: linear-gradient(var(--fourth-color) 0%, var(--third-color) 100%);
+}
+#root{
+    min-height: 100vh;
+}
+/* Navbar */
 header{
-    width: 100%;
-    background-image: linear-gradient( var(--first-color),rgba(255,0,0,0));
+    background-image: linear-gradient( var(--first-color),rgba(255,0,0,0.1));
     height: 50px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
 .navbar{
     width: 80%;
@@ -28,7 +35,7 @@ header{
 .navbar-name{
     display: inline;
 }
-.navbar-name h2 a,.navbar-name h2 a:hover,.navbar-name h2 a:visited {
+.navbar-name h2 a,.navbar-name h2 a:hover,.navbar-name h2 a:visited,.nav-link{
     text-decoration: none;
     color: inherit;
 }
@@ -42,6 +49,7 @@ header{
     list-style: none;
     height: 50px;
     margin-left: 5px;
+    border-radius: 10px;
 }
 .navbar-links ul li:hover{
     background-image: linear-gradient(var(--first-color),rgba(255,0,0,0));
@@ -60,6 +68,104 @@ header{
     font-size: 16px;
     font-weight: 600;
 }
+.nav-link-use{
+    color:#81F4FF !important;
+}
+
+/* MisoClick */
+.BodyClicker{
+    width: 600px;
+    margin: 15px auto;
+    background-color: rgba(233, 131, 236, 0.3);
+    position:relative;
+}
+.BodyClicker h2{
+    text-align: center;
+}
+.BodyClicker h3{
+    text-align: center;
+}
+.BodyClicker img{
+    max-width: 80%;
+    padding: 10px;
+    display:block;
+    margin:auto;
+}
+.bienvenida{
+    text-align: center;
+    width: 80%;
+    margin:30px auto;
+    color: #ffffff;
+}
+.MisoraClicker:not(:active) {
+    animation: img-click;
+    animation-duration: 0.4s;
+}
+
+/* Footer */
+.footer{
+    background-color: #262265b9;
+}
+.footer-cont{
+    margin: 0 auto;
+    width: 80%;
+}
+.footer-cont .footer-1{
+    width: 100%;
+    max-width:1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:50px;
+    padding: 20px 0px;
+}
+.footer-cont .footer-1 .footer-name h3{
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color:white;
+}
+.footer-links,.footer-name{
+    text-align: center;
+}
+.footer-links h3{
+    color:white;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.footer-links p{
+    color:white;
+    font-size: 14px;
+}
+.footer-redes a{
+    display:inline-block;
+    text-decoration: none;
+    color:white;
+    width:45px;
+    height:45px;
+    line-height: 45px;
+    margin: 8px;
+    background-color: #0e0b31;
+    border-radius: 50px;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.footer-redes a:hover{
+    transition: all 300ms ease;
+    color:rgb(108, 245, 255);
+    background-image: linear-gradient(var(--first-color),rgba(255,0,0,0));
+}
+.footer-2{
+    width: 100%;
+    background-color: #131138b9;
+    text-align: center;
+    color:white;
+}
+
+/* Landing */
 .landing-background{
     background: linear-gradient(
     to bottom,
@@ -68,6 +174,7 @@ header{
   ),url('./img/misolanding.webp');
     
     background-repeat: none;
+    background-attachment: scroll;
     background-size: cover;
     position:absolute;
     top:0px;
@@ -76,6 +183,8 @@ header{
     left:0px;
     z-index: -1;
 }
+
+/* Galeria */
 .galery{
     display: flex;
     margin-top:15px;
@@ -97,6 +206,8 @@ header{
     max-width: 90%;
     max-height: 90%;
 }
+
+/* SimpleBackground oculto */
 .background{
     background-repeat: none;
     background-size: cover;
@@ -108,11 +219,55 @@ header{
     z-index: -1;
 }
 
+@media (max-width:600px){
+    .footer-cont .footer-1{
+        width: 80%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+    .BodyClicker{
+        width: 300px;
+    }
+}
 @keyframes navbar-load {
     0%{
         transform: translateY(-100%);
     }
     100%{
         transform: translateY(0%);
+    }
+}
+
+@keyframes img-click {
+    0%{
+        transform: translateY(0%);
+        transform: translateX(0%);
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: translateY(-10%);
+        transform: translateX(-10%);
+        transform: rotate(10deg);
+    }
+    40%{
+        transform: translateY(10%);
+        transform: translateX(-10%);
+        transform: rotate(-10deg);
+    }
+    60%{
+        transform: translateY(-10%);
+        transform: translateX(-10%);
+        transform: rotate(20deg);
+    }
+    80%{
+        transform: translateY(10%);
+        transform: translateX(10%);
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: translateY(0%);
+        transform: translateX(0%);
+        transform: rotate(0deg);
     }
 }

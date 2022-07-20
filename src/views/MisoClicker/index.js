@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar'
 import {useEffect} from 'react'
 import WelToClciker from './component/WelToClciker';
 import Background from './component/background'
+import Footer from '../components/Footer'
 export default function MisoClicker(){
     const{setGlobalClick} = MisoClick(({setGlobalClick}) =>({setGlobalClick}),shallow);
     useEffect(() => {
@@ -18,6 +19,7 @@ export default function MisoClicker(){
             <WelToClciker />
             <Background />
         </div>
+        <Footer />
         </>
     )
 }

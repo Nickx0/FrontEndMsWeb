@@ -3,7 +3,7 @@ import MisoClick from '../../../stores/zustand.js';
 import shallow from 'zustand/shallow';
 import sounds from './sounds'
 export default function BodyClicker(){
-    const{localclick,click,clicks} = MisoClick(({localclick,click,clicks}) =>({localclick,click,clicks}),shallow);
+    const{localclick,click} = MisoClick(({localclick,click}) =>({localclick,click}),shallow);
     const play = () => {
         click();
         const audio = new Audio();
@@ -13,11 +13,9 @@ export default function BodyClicker(){
     };
     return(
         <div className='BodyClicker'>
-            <img src="https://misora.moe/MisoraIdol.webp" className="img-bienvenida" alt="Hina-Misora"/>
+            <img src="./img/MisoraIdol.webp" className="MisoraClicker" alt="Hina-Misora" onClick={play} />
             <GlobalClicker />
-            <h5>{clicks} Easter Egg Clicker</h5>
-            <h2>{localclick} Your Clicks</h2>
-            <button onClick={play}> MisoClick</button>
+            <h3>{localclick} MisoClick hechos por ti.</h3>
             <span id='player'></span>
         </div>
     )

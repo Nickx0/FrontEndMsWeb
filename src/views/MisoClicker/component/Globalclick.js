@@ -12,7 +12,7 @@ export default function GlobalClciker(){
     },[])
     return(
         <div className="GlobalClcikera">
-            <h1>{globalclick} Misopitas en total</h1>
+            <h2>{globalclick} MisoClicks.</h2>
         </div>
     )
 }

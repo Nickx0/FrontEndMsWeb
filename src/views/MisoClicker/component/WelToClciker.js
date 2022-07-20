@@ -1,8 +1,8 @@
 export default function WelToClciker(){
     return(
         <div className="bienvenida">
-                <h1>bienvenido!!</h1>
-                <p>Esta pagina esta en proceso, tendras que esperar un poco mas</p>
+                <h1>Bienvenido al MisoClicker!!</h1>
+                <p>El MisoClicker reproducira sonidos aleatorios y contara los clicks de todos los misopitas en total</p>
             </div>
     )
 }

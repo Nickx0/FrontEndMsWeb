@@ -7,7 +7,7 @@ export default function RouteDocument(){
     return (
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Galeria" element={<Galeri />} />
+          <Route path="/Galery" element={<Galeri />} />
           <Route path="/MisoClicker" element={<MisoClicker />} />
           <Route
           path="*"
