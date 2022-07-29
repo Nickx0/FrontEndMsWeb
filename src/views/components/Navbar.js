@@ -11,7 +11,7 @@ export default function Navbar(){
           <div className="navbar-links" id="navbarNavAltMarkup">
             <ul className="navbar-nav">
               <li><Link className={`nav-link ${val===1 ? "nav-link-use": ""} `} to="/">Home</Link></li>
-              <li><Link className={`nav-link ${val===2 ? "nav-link-use": ""} `} to="/Galery">Galeria</Link></li>
+              <li><Link className={`nav-link ${val===2 ? "nav-link-use": ""} `} to="/Gallery">Galeria</Link></li>
               <li><Link className={`nav-link ${val===3 ? "nav-link-use": ""} `} to="/MisoClicker">Clicker</Link></li>
               <li><Link className={`nav-link ${val===4 ? "nav-link-use": ""} `} to="/NextProyect">Next</Link></li>
               </ul>
