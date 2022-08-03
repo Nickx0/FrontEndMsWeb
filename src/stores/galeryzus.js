@@ -11,5 +11,11 @@ const GaleryZus = create((set,get)=>({
             console.error(error);
         }
     },
+    imgExpanded:false,
+    srcImg:'',
+    setExpanded: (url)=>{
+        set((state)=>({imgExpanded : !state.imgExpanded}))
+        set({srcImg:url})
+    },
 }))
 export default GaleryZus;

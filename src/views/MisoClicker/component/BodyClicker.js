@@ -13,7 +13,7 @@ export default function BodyClicker(){
     };
     return(
         <div className='BodyClicker'>
-            <img src="./img/MisoraIdol.webp" className="MisoraClicker" alt="Hina-Misora" onClick={play} />
+            <img src="./utilities/MisoraIdol.webp" className="MisoraClicker" alt="Hina-Misora" onClick={play} />
             <GlobalClicker />
             <h3>{localclick} MisoClick hechos por ti.</h3>
             <span id='player'></span>

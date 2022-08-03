@@ -6,6 +6,7 @@ import {useEffect} from 'react'
 import WelToClciker from './component/WelToClciker';
 import Background from './component/background'
 import Footer from '../components/Footer'
+import Meta from '../components/Meta'
 export default function MisoClicker(){
     const{setGlobalClick} = MisoClick(({setGlobalClick}) =>({setGlobalClick}),shallow);
     useEffect(() => {
@@ -13,6 +14,7 @@ export default function MisoClicker(){
     },[])    
     return(
         <>
+        <Meta description="Clicker de Hina Misora, ayuda a obtener una puntuacion mas alta" title="Clicker"/>
         <Navbar />
         <div className="MisoClicker">
             <BodyClicker />
