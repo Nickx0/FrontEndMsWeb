@@ -9,6 +9,41 @@
     --gallery-columns: 5;
     --columns-wiki: 2;
 }
+.left{
+    animation: left-animation 1.5s;
+}
+.left-wale{
+    animation: left-animation-wale 1.5s;
+}
+.right-wale-1{
+    animation: right-animation-wale-1 1.5s;
+}
+.right-wale-2{
+    animation: right-animation-wale-2 1.5s;
+}
+.right{
+    animation: right-animation 1.5s;
+}
+.title{
+    animation: title 1.5s;
+}
+.FakeContent{
+    min-height: 80vh;
+    width: 100%;
+}
+.separator{
+    height:12.5vh;
+    width: 100%;
+    stroke: none; 
+    fill: #08f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.separator svg{
+    height: 100%; 
+    width: 100%;
+}
 ::-webkit-scrollbar{
     width: 0.6em;
 }
@@ -42,7 +77,6 @@ header{
 .navbar{
     width: 80%;
     margin: 0 auto;
-    float: center;
     display: flex;
     justify-content: space-between;
     color: #fff;
@@ -88,9 +122,21 @@ header{
 .nav-link-use{
     color:#81F4FF !important;
 }
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    line-height: 50px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+
 
 /* Landing */
 .landing-containter{
+    min-height: 60vh;
     width: 100%;
     height: calc(100vh + 1px);
     overflow:hidden;
@@ -115,8 +161,79 @@ header{
     }
     
 .service-container{
-    
+    display: flex;
+    flex-wrap: wrap;
 }
+    .service-containter h3{
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    .misopita-img{
+        width: 50%;
+    }
+    .services-block{
+        display: flex;
+        border: 3px solid red;
+        border-radius: 15px;
+        width: 41%;
+        min-width: 259px;
+        
+    }
+    .services{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .image-services{
+        display: flex;
+        width: 25%;
+        height:auto;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 30vh);
+        min-width: 105px;
+    }
+    .image-services img{
+        width: 90%;
+    }
+    .services-redes{
+        display: flex;
+        flex-wrap: wrap;
+        width: 75%;
+        height: auto;
+        align-items: center;
+        height: calc(100vh - 30vh);
+        justify-content: space-between;
+        padding-left: 3%;
+    }
+    .service-right{
+        width: 70%;
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+    }
+    .service-right b{
+        display: inline-block;
+        font-size: 1.2rem;
+        margin: 5px 2%;
+    }
+    .service-right p{
+        font-size: 0.9rem;
+        margin: 0 2%;
+    }
+    .service-left{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .service-left img{
+        width: 90%;
+    }
+
+
+
+
 .memo-containter{
     display: flex;
     flex-direction: column;
@@ -136,7 +253,7 @@ header{
         height: 80vh;
     }
     .memorable-content-left{
-        min-width: 432px;
+        min-width: 433px;
         display:flex;
         justify-content: center;
         width: 60%;
@@ -172,6 +289,7 @@ header{
 .firstream-containter{
     display: flex;
     flex-direction: column;
+    height:100vh;
 }
     .firstream-containter h3{
         font-family: monospace;
@@ -209,6 +327,7 @@ header{
         flex-direction: column;
         align-items: center;
         text-align: center;
+        min-width: 288px;
     }
     .first-content-left h4{
         margin-top: 30%;
@@ -224,18 +343,119 @@ header{
 .sub-containter{
     background-color: #00a2ff;
     position: relative;
+    height:100vh;
+    display: flex;
 }
+    .upsub{
+        position: relative;
+        min-height: 60vh;
+    }
+    .sobre-sub{
+        height:110vh;
+        width: 100%;
+        background-color: #00a2ff;
+        position: absolute;
+        top: -5vh;
+        z-index: -10;
+    }
+    .sub-title-h3{
+        font-family: monospace, serif;
+        color: rgb(235, 211, 0);
+        font-size: 3.5rem;
+        z-index: 100;
+    }
+    .bg-counter-left{
+        position: absolute;
+        height:30%;
+        width:95%;
+        right: -15vw;
+        top: 35%;
+        border-radius: 15vh;
+        background-color: #1f61c4cc;
+        display: flex;
+        align-items: center;
+    }
+    .counter-left-mini-1{
+        top: 29%;
+        width: 40%;
+        height: 5%
+    }
+    .counter-left-mini-2{
+        width: 70%;
+        height: 10%;
+        top: 66%;
+    }
+    .sub-h3{
+        font-family: monospace;
+        color: #fff;
+        font-size: 3rem;
+        margin-left: 15%;
+    }
+    .misopita-after{
+        width: 4rem;
+        height:4rem;
+        margin-left: 1%;
+    }
+    .wale{
+        width: 90px;
+        position: absolute;
+    }
+    .wale-1{
+        width: 120px;
+        left:20%;
+        top:20%;
+        transform:rotate(20deg);
+    }
+    .wale-2{
+        bottom: 10%;
+        right:15%;
+        transform: scaleX(-1) rotate(-30deg);
+
+    }
+    .wale-3{
+        width: 200px;
+        bottom: 10%;
+        transform:rotate(-30deg);
+    }
+
+
+
+
 .Moti-containter{
-
+    display: flex;
+    flex-wrap: wrap;
 }
-.Disclaim-containter{
+    .moti-content-right{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
+    }
+    .moti-content-left{
+        min-width: 360px;
+        width: 50%;
+    }
+    .moti-content-left img{
+        width: 75%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+.title-h3{
+    font-size: 2rem;
+    color: #6b0096;
+}
+.Disclaimer-containter{
+    display: flex;
+    flex-wrap: wrap;
 }
 .ty-containter{
-    
+    display: flex;
+    flex-wrap: wrap;
 }
 .credit-containter{
-    width: 95%;
+    height:auto;
 }
     .credit-title{
         text-align: center;
@@ -258,14 +478,14 @@ header{
     }
     .autors-body{
         min-width: 28px;
-        margin: 10px 28px;
-        width: 40%;
+        margin: 10px 8px;
+        width: 44%;
         background-color: var(--fourth-color);
         display:flex;
         padding:10px;
         border: 2px solid #00ccff;
         border-radius: 20px;
-        height: 350px;
+        height: 360px;
     }
     .autors-body-left{
         display: flex;
@@ -326,43 +546,13 @@ header{
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.bg-counter-left{
-    position: absolute;
-    height:30%;
-    width:80%;
-    right: -35px;
-    top: 35%;
-    bottom: 35%;
-    border-radius: 50px;
-    background-color: #080cff;
-}
-.bg-counter-left p{
-
-}
-.wale{
-    width: 60px;
-    position: absolute;
-}
-
 /* MisoClick */
 .BodyClicker{
     width: 600px;
     margin: 15px auto;
     background-color: rgba(233, 131, 236, 0.3);
     position:relative;
+    border-radius: 2vh;
 }
 .BodyClicker h2{
     text-align: center;
@@ -457,14 +647,14 @@ header{
     z-index: -1;
     top:0;
     width: 100%;
-    height: 100vh;
+    height: 105vh;
     overflow:hidden;
     display:flex;
     align-items: center;
     justify-content: center;
 }
 .landing-background img{
-    height: 100vh;
+    height: 105vh;
 }
 /* Galeria */
 
@@ -592,7 +782,7 @@ header{
 
 .comment-wiki {
     background-color: var(--second-color);
-    margin: 2%;
+    margin-bottom: 2%;
     padding: 2%;
     border-radius: 10px;
 }
@@ -629,6 +819,7 @@ header{
     .first-content-right-iframe iframe{
         height: 400px;;
     }
+    
 }
 @media (max-width:800px){
     .footer-cont .footer-1{
@@ -638,7 +829,7 @@ header{
         padding: 35px 0px;
     }
     .BodyClicker{
-        width: 300px;
+        width: 80%;
     }
     .autors-body{
         width:80%;
@@ -712,7 +903,173 @@ header{
     :root {
         --columns-wiki: 1;
     }
+    .checkbtn{
+        display: inline-block;
+        margin-left: auto;
+        
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2e20539c;
+        top: 49px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+    }
+    li{
+        margin: 40px 0;
+        line-height: 30px;
+      }
+    #check:checked ~ .navbar-links ul{
+        left: 0px;
+    }
+    
+    .services-block{
+        width: 90%;
+    }
+    .services-redes{
+        justify-content: center;
+    }
+    .memo-containter{
+        height:auto;
+    }
+    .memo-containter h3{
+        font-size: 3.2rem;
+        margin-bottom:10vh;
+        text-align: center;
+    }
+    .memorable-content{
+        height:auto;
+    }
+    .memorable-content-left{
+        width: 100%;
+    }
+    .memorable-content-left-iframe{
+        width: auto;
+    }
+    .memorable-content-left-iframe iframe{
+        width: 650px;
+    }
+    .memorable-content-right{
+        width: 100%;
+    }
+    .memorable-content-right h4{
+        margin-top: 10vh;
+    }
+
+    .firstream-containter{
+        height:auto;
+    }
+
+    .firstream-containter h3{
+        font-size: 3.2rem;
+        margin-bottom: 10vh;
+        text-align: center;
+    }
+    .first-content{
+        height:auto;
+    }
+    .first-content-left{
+        width: 100%;
+        margin-bottom: 10vh;
+    }
+    .first-content-left h4{
+        margin-top: 2vh;
+    }
+    .first-content-right{
+        width: 100%;
+    }
+    .first-content-right-iframe{
+        width: auto;
+    }
+    .first-content-right-iframe iframe{
+        width: 650px;
+    }
+
+    .moti-content-left{
+        height:50vh;
+    }
+    .moti-content-right{
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+    }
+    .moti-content-left img{
+        width: 90%;
+    }
+    .memorable-content-right p{
+        font-size: 1.2rem;
+    }
+    .Moti-containter{
+        height:auto;
+    }
+    .Disclaimer-containter{
+        height:auto;
+    }
+    .ty-containter{
+        height:auto;
+    }
 }
+@media (max-width: 700px){
+    .memorable-content-left-iframe iframe{
+        width: 550px;
+    }
+    .first-content-right-iframe iframe{
+        width: 550px;
+    }
+
+
+
+
+}
+
+@media (max-width: 600px){
+    .memorable-content-left-iframe iframe{
+        width: 450px;
+    }
+    .memorable-content-left{
+        min-width: auto;
+    }
+    .first-content-right-iframe iframe{
+        width: 450px;
+    }
+    .first-content-right{
+        min-width: auto;
+    }
+}
+
+@media (max-width: 500px){
+    .memorable-content-left-iframe iframe{
+        width: 350px;
+        height:250px;
+    }
+    .first-content-right-iframe iframe{
+        width: 350px;
+        height:250px;
+    }
+    .service-containter{
+        height:auto;
+    }
+    .image-services{
+        display: flex;
+        width: 100%;
+        height:50vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .image-services img{
+        width: 80%;
+    }
+    .services-redes{
+        width: auto;
+    }
+}
+
+
+
 
 @media (max-width: 1000px) {
     .section-wiki-img {
@@ -761,7 +1118,69 @@ header{
         transform: translateY(0%);
     }
 }
-
+@keyframes right-animation {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0.2;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+@keyframes left-animation {
+    0%{
+        transform: translateX(100%);
+        opacity: 0.2;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+@keyframes left-animation-wale {
+    0%{
+        transform: translateX(100%) scaleX(-1) rotate(0deg);
+        opacity: 0.2;
+    }
+    100%{
+        transform: translateX(0%) scaleX(-1) rotate(-30deg);
+        opacity: 1;
+        
+    }
+}
+@keyframes right-animation-wale-1 {
+    0%{
+        transform: translateX(-100%) rotate(0deg);
+        opacity: 0.2;
+    }
+    100%{
+        transform: translateX(0%) rotate(20deg);
+        opacity: 1;
+        
+    }
+}
+@keyframes right-animation-wale-2 {
+    0%{
+        transform: translateX(-100%) rotate(0deg);
+        opacity: 0.2;
+    }
+    100%{
+        transform: translateX(0%) rotate(-30deg);
+        opacity: 1;
+        
+    }
+}
+@keyframes title {
+    0%{
+        transform: translateY(200%);
+        opacity: 0.2;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
 @keyframes img-click {
     0%{
         transform: translateY(0%);
