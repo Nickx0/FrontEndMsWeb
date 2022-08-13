@@ -15,6 +15,10 @@ export default function Navbar(){
           <div className="navbar-name">
             <h2 className="navbar-brand">Hina Misora</h2>
           </div>
+          <input type="checkbox" id="check"/>
+          <label htmlFor="check" className="checkbtn">
+            <i className="fas fa-bars"></i>
+          </label>
           <div className="navbar-links" id="navbarNavAltMarkup">
             <ul className="navbar-nav">
               <li><Link className={`nav-link ${val===1 ? "nav-link-use": ""} `} to="/">Home</Link></li>

@@ -5,7 +5,6 @@ function App() {
   return (
     <>
     {/*<ScroolToTop />*/}
-    
     <Meta description="Pagina Web Dedicada a Hina Misora." title="404"/>
     <RouteDocument />
     </>

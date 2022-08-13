@@ -10,24 +10,33 @@ import Motivation from "./components/Motivation"
 import Disclaimer from "./components/Disclaimer"
 import Thanksforvisit from "./components/Thanksforvisit"
 import Meta from '../components/Meta'
+import Separator from './components/Separator'
 export default function Home(){
     return(
         <>
             <Meta description=" Pagina Web Dedicada a Hina Misora como regalo" title="Home"/>
-            <Navbar />
+            <Navbar/>
             <div className="landing-background">
                 <img src="./utilities/misolanding.webp" alt="misora"/>
             </div>
             <Welcome/>
-            <ServiceRed />
-            <MemorableStreams />
-            <Firstreams />
+            <Separator/>
+            <ServiceRed/>
+            <Separator/>
+            <MemorableStreams/>
+            <Separator/>
+            <Firstreams/>
+            <Separator/>
             <SubCounter/>
+            <Separator/>
             <Motivation/>
+            <Separator/>
             <Disclaimer/>
+            <Separator/>
             <Thanksforvisit/>
+            <Separator/>
             <Credit/>
-            <Footer />
+            <Footer/>
         </>
     )
 }

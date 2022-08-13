@@ -1,16 +1,14 @@
+import {Suspense,lazy} from 'react'
+import useNearScreen from '../../../hooks/useNearScreen'
+import Void from './Void'
+const Thanksbody = lazy(() => import('./Thanksbody'));
 export default function Thanksforvisit(){
+    const {show,elementRef} = useNearScreen();
     return(
-        <div className="landing-containter ty-containter">
-            <div>
-                <img/>
-            </div>
-            <div>
-                <h3>Espero te hallas divertido</h3>
-                <p>
-                Hola a todos, gracias bienvenidos a la pagina, espero que te hallas diverdido, gracias a todos los que visiten la pagina.
-                Muchas gracias a la gente que ayudo a construirla y dio feedback.
-                </p>
-            </div>
+        <div className="landing-containter ty-containter" ref={elementRef}>
+            <Suspense fallback={<Void/>}>
+                {show ? <Thanksbody/>:null}
+            </Suspense>
         </div>
     )
 }

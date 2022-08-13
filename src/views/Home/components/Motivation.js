@@ -1,17 +1,14 @@
+import {Suspense,lazy} from 'react'
+import useNearScreen from '../../../hooks/useNearScreen'
+import Void from './Void'
+const Motivationbody = lazy(() => import('./Motivationbody'));
 export default function Motivation(){
+    const {show,elementRef} = useNearScreen();
     return(
-        <div className="landing-containter Moti-containter">
-            <div>
-                <img/>
-            </div>
-            <div>
-                <h3>
-                    Motivation
-                </h3>   
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                </p>
-            </div>
+        <div className="landing-containter Moti-containter" ref={elementRef}>
+            <Suspense fallback={<Void/>}>
+                {show ? <Motivationbody/>:null}
+            </Suspense>
         </div>
     )
 }
