@@ -1,6 +1,6 @@
 import {Suspense,lazy} from 'react'
 import useNearScreen from '../../../hooks/useNearScreen'
-import Void from './Void'
+import Void from '../../components/Void'
 const Firstreamsbody = lazy(() => import('./Firstreamsbody'));
 export default function Firstreams(){
     const {show,elementRef} = useNearScreen();

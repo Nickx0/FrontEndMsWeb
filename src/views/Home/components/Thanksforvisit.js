@@ -1,6 +1,6 @@
 import {Suspense,lazy} from 'react'
 import useNearScreen from '../../../hooks/useNearScreen'
-import Void from './Void'
+import Void from '../../components/Void'
 const Thanksbody = lazy(() => import('./Thanksbody'));
 export default function Thanksforvisit(){
     const {show,elementRef} = useNearScreen();

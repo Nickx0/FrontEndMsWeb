@@ -1,6 +1,6 @@
 import {Suspense,lazy} from 'react'
 import useNearScreen from '../../../hooks/useNearScreen'
-import Void from './Void'
+import Void from '../../components/Void'
 const Motivationbody = lazy(() => import('./Motivationbody'));
 export default function Motivation(){
     const {show,elementRef} = useNearScreen();

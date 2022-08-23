@@ -1,6 +1,6 @@
 import {Suspense,lazy} from 'react'
 import useNearScreen from '../../../hooks/useNearScreen'
-import Void from './Void'
+import Void from '../../components/Void'
 const ServiceRedbody = lazy(() => import('./ServiceRedbody'));
 export default function ServiceRed(){
     const {show,elementRef} = useNearScreen();

@@ -2,12 +2,16 @@ import {useEffect,useState} from "react"
 import apiCall from "../../../hooks/apiCall"
 import { API_URL } from "../../../urls"
 export default function Subbody(){
-    const [subcounter,setsubcounter]=useState("0k")
+    const [subcounter,setsubcounter]=useState("0")
     useEffect(() => {
         const getsubcounter = async () =>{
-            let counter = await apiCall({url: `${API_URL}subs`});
-            counter = counter.slice(10,-15);
-            setsubcounter(counter)
+            try {
+                let counter = await apiCall({url: `${API_URL}subs`});
+                counter = counter.slice(10,-15);
+                setsubcounter(counter);
+            } catch (error) {
+                setsubcounter("200");
+            }
         }
         getsubcounter();
     },[])

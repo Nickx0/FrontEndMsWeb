@@ -1,6 +1,6 @@
 import {Suspense,lazy} from 'react'
 import useNearScreen from '../../../hooks/useNearScreen'
-import Void from './Void'
+import Void from '../../components/Void'
 const CreditBody = lazy(() => import('./Creditbody'));
 export default function Credit(){
     const {show,elementRef} = useNearScreen();

@@ -1,6 +1,6 @@
 import {Suspense,lazy} from 'react'
 import useNearScreen from '../../../hooks/useNearScreen'
-import Void from './Void'
+import Void from '../../components/Void'
 const Memobody = lazy(() => import('./Memobody'));
 export default function MemorableStreams(){
     const {show,elementRef} = useNearScreen();
