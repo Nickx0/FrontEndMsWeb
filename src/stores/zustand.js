@@ -25,6 +25,7 @@ const MisoClick = create((set,get)=>({
             set({globalclick:global[0].counter});
         } catch (error) {
             console.error(error);
+            set({globalclick:0});
         }
     }
 }))
