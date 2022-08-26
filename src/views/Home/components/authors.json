@@ -1,8 +1,8 @@
 [
     {
         "Rol":"Developer",
-        "name":"Ɲ Ĩ Ȼ Қ",
-        "functions":"React Developer, Clicker and Landing Page",
+        "name":"Ɲ Ĩ Ȼ Қ 🐳✨",
+        "functions":"Desarrollador de React, Clicker, Landing y Responsive",
         "text":"Por ti nena, seria batman 🦇",
         "arroba":"@N9ck714",
         "discord":"https://discord.com/users/373887814963560448",
@@ -11,12 +11,32 @@
     },
     {
         "Rol":"Developer",
-        "name":"Tamiel",
-        "functions":"Gallery and Backend",
+        "name":"Tamiel 🐳✨",
+        "functions":"Desarrollador de Galeria y Wiki",
         "text":"Me gustan las lolis",
         "arroba":"@Tamiel_AK",
         "discord":"https://discord.com/users/407380221239492610",
         "picture":"./utilities/tamiel-avatar.png",
         "twitter":"https://twitter.com/Tamiel_AK"
+    },
+    {
+        "Rol":"Host",
+        "name":"Himie 🐳✨",
+        "functions":"Hosting y Soporte Moral)?",
+        "text":"Te amo Tsubomi Hanasaki)?",
+        "arroba":"@Himles",
+        "discord":"https://discord.com/users/143419914147987456",
+        "picture":"https://pbs.twimg.com/profile_images/1554972583711412227/NQ0w4Zw8_400x400.jpg",
+        "twitter":"https://twitter.com/Himles"
+    },
+    {
+        "Rol":"Developer",
+        "name":"Lord Half 🐳✨",
+        "functions":"Comunicacion con Artistas",
+        "text":"Soy la billetera de misora)?",
+        "arroba":"@LordHalf1",
+        "discord":"https://discord.com/users/880946907629899776",
+        "picture":"https://media.discordapp.net/attachments/993591049266143293/1012253516947013652/20220825_063040.jpg",
+        "twitter":"https://twitter.com/LordHalf1"
     }
 ]

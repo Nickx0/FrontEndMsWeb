@@ -9,8 +9,8 @@ export default function Memobody(){
                 </div>
             </div>
             <div className="memorable-content-right left">
-                <h4>Stream Previo de regalos</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                <h4>Stream de Regalos</h4>
+                <p>Primer Stream donde se le entregaron varios regalos a Misora, y de donde partimos para intentar hacer algo mas grande</p>
             </div>
         </div>
         </>

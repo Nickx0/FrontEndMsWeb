@@ -1,9 +1,7 @@
 export default function information(){
     return (
         <div className="section-wiki">
-            <div className="section-wiki-div-img">
-                <img className="section-wiki-img" src="./utilities/misora_wiki_img.webp" alt="" />
-            </div>
+                <img className="section-wiki-div-img" src="./utilities/misora_wiki_img.webp" alt="" />
             <div className="section-wiki-info">
                 <h2 className="section-wiki-info-title">Hina Misora</h2>
                 <p>Nombres: ヒナミソラ (Hina Misora), 妃纳海空 (Feina Haikong)</p>

@@ -8,7 +8,7 @@ export default function MotivationBody(){
                 <h3 className="title-h3 title">
                     Motivation
                 </h3>   
-                <p className="left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                <p className="left">Nuestra unica motivacion es el cariño que le tenemos a Misora, siempre le estaremos apoyando, algunos mas que otros, pero siempre intentaremos estar alli como un buen Misopita.</p>
                 <p></p>
             </div>
         </>

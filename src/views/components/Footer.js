@@ -10,7 +10,7 @@ export default function Footer(){
                     </div>
                     <div className="footer-links">
                         <h3>Nosotros</h3>
-                        <p>La pagina fue hecha por un grupo de misopitas ajenas al server de discord de wactor :v</p>
+                        <p>Pagina hecha por un grupo pequeño de misopitas</p>
                     </div>
                     <RedesMisora />
                 </div>

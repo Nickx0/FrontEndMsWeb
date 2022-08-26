@@ -1,11 +1,12 @@
 export default function Firstreamsbody(){
     return(
         <>
-        <h3 className="title">Stream Memorable</h3>
+        <h3 className="title">Primer Stream</h3>
             <div className="first-content">
                 <div className="first-content-left right">
-                    <h4>Primer Stream</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                    <h4>Donde la conocimos.</h4>
+                    <p>El primer stream que Misora realizo, y donde la mayoria de nuestro grupo la conocio, se que le da cringe y por eso lo puse aqui.</p>
+                    <img src="./utilities/giggles.png" className="gigles"></img>
                 </div>
                 <div className="first-content-right left">
                     <div className="first-content-right-iframe">

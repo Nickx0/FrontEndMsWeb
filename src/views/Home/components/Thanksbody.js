@@ -5,9 +5,9 @@ export default function Thanksbody(){
             <img src="./utilities/MisoraIdol.webp" alt='Hina Misora'/>
         </div>
         <div className="memorable-content-right moti-content-right">
-            <h3 className="title-h3 title">Espero te hallas divertido</h3>
+            <h3 className="title-h3 title">Gracias por la visita</h3>
             <p className="left">
-            Hola a todos, gracias bienvenidos a la pagina, espero que te hallas diverdido, gracias a todos los que visiten la pagina.
+            Hola a todos, gracias y bienvenidos, espero se hallan divertido y disfrutado de algunas caracterizticas de la pagina.<br/>
             Muchas gracias a la gente que ayudo a construirla y dio feedback.
             </p>
         </div>
