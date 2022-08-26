@@ -9,6 +9,10 @@
     --gallery-columns: 5;
     --columns-wiki: 2;
 }
+.gigles{
+    width: 3rem;
+    height: 4rem;
+}
 .fakeconstruction{
     display: flex;
     flex-direction: column;
@@ -738,6 +742,7 @@ header{
 
 .expanded-gallery-img {
     max-height: 90vh;
+    border-radius: 20px;;
 }
 .item-galery-misora:hover {
     transition: all 300ms;
@@ -760,14 +765,13 @@ header{
 .section-wiki {
     position: relative;
     margin: 3% 6%;
+    width: 90%;
+    height:75vh;
+    overflow: hidden;
 }
 
 .section-wiki-div-img {
-    position: relative;
-}
-
-.section-wiki-img {
-    width: 100%;
+    height: 100%;
 }
 
 .section-wiki-info {
@@ -778,7 +782,7 @@ header{
     text-align: center;
     padding: 2%;
     width: 40%;
-    height: 100%;
+    height:75vh;
     background-color: rgba(0,0,0, 0.8);
 }
 
@@ -801,14 +805,14 @@ header{
 }
 
 .comment-conteiner {
-    columns: var(--columns-wiki);
+    display: grid;
     margin: 5%;
-    height: max-content;
+    grid-template-columns: auto auto;
 }
 
 .comment-wiki {
     background-color: var(--second-color);
-    margin-bottom: 2%;
+    margin: 2%;
     padding: 2%;
     border-radius: 10px;
 }
@@ -926,6 +930,9 @@ header{
 }
 
 @media (max-width: 800px) {
+    .comment-conteiner{
+        grid-template-columns: auto;
+    }
     :root {
         --columns-wiki: 1;
     }
@@ -1097,17 +1104,6 @@ header{
 
 
 
-@media (max-width: 1000px) {
-    .section-wiki-img {
-        width: 0%;
-    }
-
-    .section-wiki-info {
-        position: relative;
-        width: auto;
-        height: max-content;
-    }
-}
 
 
 
@@ -1124,15 +1120,10 @@ header{
     }
 }
 
-@media (max-width: 1000px) {
-    .section-wiki-img {
-        width: 0%;
-    }
+@media (max-width: 1050px) {
 
     .section-wiki-info {
-        position: relative;
-        width: auto;
-        height: max-content;
+        width: 100%;
     }
 }
 
