@@ -50,6 +50,7 @@
     animation: right-animation 1.5s;
 }
 .title{
+    font-family: 'Oswald', sans-serif;
     animation: title 1.5s;
 }
 .FakeContent{
@@ -181,13 +182,14 @@ header{
     justify-content: center;
     color: #ffd900;
     -webkit-text-stroke: 1px black;
+    font-family: 'Oswald', sans-serif;
 }   
     .wellcome-containter h1{
-        font-size: 3.5rem;
+        font-size: 4rem;
     }
     .wellcome-containter p{
         margin-top: 20px;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     
 .service-container{
@@ -269,7 +271,7 @@ header{
     flex-direction: column;
 }
     .memo-containter h3{
-        font-family: monospace;
+        font-family: 'Oswald', monospace;
         display: flex;
         font-size: 2.5rem;
         height:10vh;
@@ -322,7 +324,7 @@ header{
     height:100vh;
 }
     .firstream-containter h3{
-        font-family: monospace;
+        font-family: 'Oswald', monospace;
         display: flex;
         font-size: 2.5rem;
         height:10vh;
@@ -389,7 +391,7 @@ header{
         z-index: -10;
     }
     .sub-title-h3{
-        font-family: monospace, serif;
+        font-family: 'Orbitron', sans-serif;
         color: rgb(235, 211, 0);
         font-size: 3.5rem;
         z-index: 100;
@@ -416,10 +418,10 @@ header{
         top: 66%;
     }
     .sub-h3{
-        font-family: monospace;
         color: #fff;
         font-size: 3rem;
         margin-left: 15%;
+        font-family: 'Antonio', sans-serif;
     }
     .misopita-after{
         width: 4rem;
@@ -475,6 +477,7 @@ header{
 .title-h3{
     font-size: 2rem;
     color: #6b0096;
+    font-family: 'Oswald', sans-serif;
 }
 .Disclaimer-containter{
     display: flex;
@@ -691,22 +694,25 @@ header{
 /* Style Galery */
 
 .galery-misora {
+    display:grid;
     margin: 5%;
-    column-count: var(--gallery-columns);
+    margin-top: 2%;
+    grid-template-columns: repeat(var(--gallery-columns),1fr);
+    grid-gap: 0 1%;
+    height:auto;
 }
 
 .item-galery-misora {
-    -webkit-column-break-inside: avoid;
-    page-break-inside: avoid;
-    break-inside: avoid;
-    overflow: hidden;
+    height:auto;
+    margin-bottom: 10%;
 }
 
 .img-cuadro-misora {
     width: 100%;
-    height: 200px;
+    height: 26vh;
     border-radius: 15px;
     object-fit: cover;
+    object-position: 50% 20%;
 }
 
 .btn-cuadro-misora {
@@ -749,9 +755,7 @@ header{
     transform: scale(1.20);
 }
 
-.img-cuadro-misora:hover {
-    height: auto;
-}
+
 
 .btn-cuadro-misora:hover {
     opacity: 1;
@@ -811,6 +815,7 @@ header{
 }
 
 .comment-wiki {
+    text-align: center;
     background-color: var(--second-color);
     margin: 2%;
     padding: 2%;
@@ -841,6 +846,78 @@ header{
     left:0px;
     z-index: -1;
 }
+
+.gallery-options{
+    width:90%;
+    margin:0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    user-select: none;
+    position: absolute;
+    cursor: pointer;
+    width: 75px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(168, 255, 146);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: rgb(255, 64, 96);;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    transform: translateX(40px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 50px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
 
 @media (max-width:1150px){
     .memorable-content-left-iframe iframe{
@@ -892,16 +969,18 @@ header{
 }
 
 @media (hover:hover) {
-    .item-galery-misora:hover {
+    #galery-box:hover{
         transition: all 300ms;
         transform: scale(1.20);
+        width:auto;
     }
-
-    .img-cuadro-misora:hover {
-        height: auto;
+    #galery-box:hover #galery-item{
+        position: absolute;
+        height:auto;
+        z-index: -10;
     }
-
     .btn-cuadro-misora:hover {
+        color: #000;
         opacity: 1;
         transition: all 100ms;
     }
