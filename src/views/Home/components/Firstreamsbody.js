@@ -5,7 +5,7 @@ export default function Firstreamsbody(){
             <div className="first-content">
                 <div className="first-content-left right">
                     <h4>Donde la conocimos.</h4>
-                    <p>El primer stream que Misora realizo, y donde la mayoria de nuestro grupo la conocio, se que le da cringe y por eso lo puse aqui.</p>
+                    <p>El primer stream que Misora realizó, y donde la mayoria de nuestro grupo la conoció. Sé que le da cringe y por eso lo puse aquí.</p>
                     <img src="./utilities/giggles.png" className="gigles"></img>
                 </div>
                 <div className="first-content-right left">

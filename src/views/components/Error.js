@@ -3,7 +3,7 @@ const Error =()=>{
         <div className="FakeContent">
             <div  className="fakeconstruction">
             <img className="construction-image" src="./utilities/MisoraIdol.webp" alt="Hina-Misora"/>
-            <b className="construction">PAGINA EN CONSTRUCCION...</b>
+            <b className="construction">PÁGINA EN CONSTRUCCIÓN...</b>
             </div>
         </div>
     )

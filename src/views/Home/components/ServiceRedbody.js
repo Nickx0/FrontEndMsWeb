@@ -13,7 +13,7 @@ export default function ServiceRedbody(){
                     </div>
                     <div className="youtube-services-right service-right">
                         <b>Youtube</b>
-                        <p>Aca podras ver a la cachetona hacer streams y es donde pasaras los mejores momentos de tu vida.</p>
+                        <p>Acá podrás ver a la cachetona hacer streams y es donde pasarás los mejores momentos de tu vida.</p>
                     </div>
                 </div>
                 <div className="twitter-services services-block left">
@@ -22,7 +22,7 @@ export default function ServiceRedbody(){
                     </div>
                     <div className="twitter-services-right service-right">
                         <b>Twitter</b>
-                        <p>Si no esta en stream la encontraras aca, estara twiteando varias cosas bonitas y divertidas, aveces antojo.</p>
+                        <p>Si no está en stream la encontrarás acá, estará twiteando varias cosas bonitas y divertidas, a veces antojo.</p>
                     </div>
                 </div>
                 <div className="streamlabs-services services-block left">
@@ -31,7 +31,7 @@ export default function ServiceRedbody(){
                     </div>
                     <div className="streamlabs-services-right service-right">
                         <b>Streamlabs</b>
-                        <p>Si tienes dinero, lo podras depositar aqui, sera de las mejores inversiones de tu vida y la cachetona sera muy feliz.</p>
+                        <p>Si tienes dinero, lo podrás depositar aquí. Será de las mejores inversiones de tu vida y la cachetona será muy feliz.</p>
                     </div>
                 </div>
                 <div className="cover-services services-block left">
@@ -39,8 +39,8 @@ export default function ServiceRedbody(){
                         <img alt="Hina Misora Red" src="./utilities/Misopita_a.png" className="misopita-img"/>
                     </div>
                     <div className="cover-services-right service-right">
-                        <b>Madre</b>
-                        <p>La Madre de Misora y a quien debemos agradecer por tenerla, no le digas suegra que misora se enoja.</p>
+                        <b>Kisaragi Mamá</b>
+                        <p>La Madre de Misora y a quien debemos agradecer por tenerla. No le digas suegra que Misora se enoja.</p>
                     </div>
                 </div>
                 </div>
