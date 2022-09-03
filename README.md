@@ -1,2 +1,2 @@
 # Frontend MisoWeb
-Proyecto just for fun
+Project just for fun
