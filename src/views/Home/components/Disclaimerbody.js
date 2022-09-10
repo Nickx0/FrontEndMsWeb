@@ -9,7 +9,7 @@ export default function Disclaimerbody(){
             </p>
         </div>
         <div className="memorable-content-left moti-content-left left">
-            <img src="./utilities/MisoraIdol.webp" alt='Hina Misora'/>
+            <img src="./utilities/misobombero.webp" alt='Hina Misora' style={{transform: "scaleX(-1)"}}/>
         </div>
         </>
     )

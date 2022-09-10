@@ -6,7 +6,7 @@ export default function Footer(){
             <div className="footer-cont">
                 <div className="footer-1">
                     <div className="footer-name">
-                        <h3 className="footer-brand">Hina Misora / ヒナミソラ</h3>
+                        <h3 className="footer-brand">Hina Misora</h3>
                     </div>
                     <div className="footer-links">
                         <h3>Nosotros</h3>

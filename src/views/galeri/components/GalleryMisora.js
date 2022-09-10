@@ -21,8 +21,6 @@ export default function GalleryMisora(){
         }
         setIsChecked(!isChecked);
     }
-    console.log(isChecked)
-    
     if(loading) return (<Void/>);
     if(error) return (<div>OCURRIO UN ERROR, VUELVA A CARGAR O ESPERE</div>)
     if(!isChecked) urlrfilter = urls.filter(data => data.r18===false);
